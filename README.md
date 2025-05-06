@@ -1,28 +1,55 @@
+```markdown
 # Gemini CLI
 
 A simple command-line interface for Google's Gemini 2.0 Flash API.
 
-## Installation
+## 🔧 Installation
 
 ```bash
 pip install .
 ```
 
-## Usage
+## 🚀 Usage Examples
 
 ```bash
 gemini "Explain how AI works"
-echo "data" | gemini "Summarize this"
-gemini "Instruction" --complete
+echo "Some text to summarize" | gemini "Summarize this"
+gemini "Generate response and save to file" > result.txt
 ```
 
-## Requirements
+## 📋 Requirements
 
-- Set environment variable:
-  ```bash
-  export GEMINI_API_KEY=your_key_here
-  ```
+You must set your Gemini API key as an environment variable.
 
-## License
+### 1. Export the API Key
+
+```bash
+export GEMINI_API_KEY="your_key_here"
+```
+
+### 2. Make It Permanent
+
+#### For Zsh users (macOS default):
+
+```bash
+echo 'export GEMINI_API_KEY="your_key_here"' >> ~/.zshrc
+source ~/.zshrc
+```
+
+#### For Bash users (Linux default):
+
+```bash
+echo 'export GEMINI_API_KEY="your_key_here"' >> ~/.bashrc
+source ~/.bashrc
+```
+
+You only need to do this once. After that, the `gemini` command will work in any new terminal session.
+
+---
+
+## ⚖️ License
 
 MIT
+```
+
+---
