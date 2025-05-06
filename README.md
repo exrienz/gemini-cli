@@ -1,4 +1,4 @@
-```markdown
+
 # Gemini CLI
 
 A simple command-line interface for Google's Gemini 2.0 Flash API.
